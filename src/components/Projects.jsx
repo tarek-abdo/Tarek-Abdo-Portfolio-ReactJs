@@ -1,0 +1,56 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+const projects = [
+  {
+    title: "E-Commerce Site",
+    img: "/images/project1.png",
+    desc: "A vibrant store with smooth animations. With products, cart, whishlist and other sections",
+    tech: ["React", "Tailwind", "Redux Toolkit", "Framer Motion"],
+    live: "https://example.com",
+    repo: "https://github.com",
+  },
+  {
+    title: "E-Commerce Site",
+    img: "/project1.jpg",
+    desc: "A vibrant store with smooth animations.",
+    tech: ["React", "Tailwind", "Redux"],
+    live: "https://example.com",
+    repo: "https://github.com",
+  },
+];
+
+const Projects = () => {
+  return (
+    <section id="projects" className="py-20">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-indigo-300 dark:to-pink-300">
+          Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, delay: index * 0.2 }}
+              whileHover={{ scale: 1.05, rotate: 1.5 }}
+              className="p-6 bg-white/20 dark:bg-gray-900/20 backdrop-blur-md rounded-lg shadow-lg hover:shadow-indigo-500/50 transition-all"
+            >
+              <img src={project.img} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">{project.desc}</p>
+              <p className="text-sm text-indigo-500 dark:text-indigo-300 mb-4">{project.tech.join(" | ")}</p>
+              <div className="flex space-x-4">
+                <a href="https://my-new-e-shop.netlify.app/" className="text-indigo-600 dark:text-indigo-300 hover:underline">Live</a>
+                <a href={project.repo} className="text-indigo-600 dark:text-indigo-300 hover:underline">GitHub</a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
