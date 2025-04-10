@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const skills = ["HTML", "CSS", "JavaScript","Typescript", "React","Redux","Redux Toolkit","Next","Angular","Tailwind CSS","Material Ui","Bootstrap", "Shade CDN", "Agile", "Jest Unit Testing", "Git/ Git-Hub","OOP", "Solid Principle", "Design Patterns","jQuery","Firebase", "Postman", "Strapi", "SQL","Framer Motion"];
+const skills = ["HTML", "CSS", "JavaScript","Typescript", "React","Redux","Redux Toolkit","Next","Angular","Node js","Mongo db","Tailwind CSS","Material Ui","Bootstrap", "Shade CDN", "Agile", "Jest Unit Testing", "Git/ Git-Hub","OOP", "Solid Principle", "Design Patterns","jQuery","Firebase", "Postman", "Strapi", "SQL","Framer Motion","Stripe", "Shadcdn","Three js"];
 
 const Skills = () => {
   return (

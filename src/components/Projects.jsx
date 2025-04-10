@@ -3,20 +3,50 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "E-Commerce Site",
+    title: "React.Js E-Commerce Website",
     img: "/images/project1.png",
-    desc: "A vibrant store with smooth animations. With products, cart, whishlist and other sections",
+    desc: "A vibrant store with smooth animations. Products cart, whishlist and other sections",
     tech: ["React", "Tailwind", "Redux Toolkit", "Framer Motion"],
-    live: "https://example.com",
-    repo: "https://github.com",
+    live: "https://my-new-e-shop.netlify.app",
+    repo: "https://github.com/tarek-abdo/e-shop",
   },
   {
-    title: "E-Commerce Site",
-    img: "/project1.jpg",
-    desc: "A vibrant store with smooth animations.",
-    tech: ["React", "Tailwind", "Redux"],
-    live: "https://example.com",
-    repo: "https://github.com",
+    title: "Next.Js E-Commerce Website",
+    img: "/images/project2.png",
+    desc: "Powerful full stack e-commerce project",
+    tech: ["Next","React", "Tailwind", "Stripe","Strapi", "Cloudinary","Kinde Authentication","Resend", "React Email"],
+    repo: "https://github.com/tarek-abdo/next.js-e-commerce-frontend",
+  },
+  {
+    title: "Doctor Appointment Booking System",
+    img: "/images/project3.png",
+    desc: "Doctor Appointment booking app with ability to serach docotrs specialization and book an appointment",
+    tech: ["Next.js","React.js","Stripe", "Strapi CMS", "Tailwind CSS","Kinde Authentication"],
+    repo: "https://github.com/tarek-abdo/doctor-appointment-frontend",
+  },
+  {
+    title: "Technical Blog Website",
+    img: "/images/project4.png",
+    desc: "Landing page technical blog website ",
+    tech: ["Next.js","React.js","Tailwind CSS"],
+    live: " https://tech-blog-website.netlify.app",
+    repo: " https://github.com/tarek-abdo/blog-website",
+  },
+  {
+    title: "Ai Gemini Web Application",
+    img: "/images/project5.png",
+    desc: "Ai gemini web application with appility to search using Gemini API",
+    tech: ["React.js","CSS", "Gemini API"],
+    live: " https://gemini-cloning-app.netlify.app",
+    repo: " https://github.com/tarek-abdo/Gemini-Clone",
+  },
+  {
+    title: "University Web Application",
+    img: "/images/project6.png",
+    desc: "University Web Application to show information about studying fileds, programs and contact info",
+    tech: ["React.js","React Scroll","Vite","CSS"],
+    live: " https://new-educity-app.netlify.app",
+    repo: " https://github.com/tarek-abdo/Educity-universty-website ",
   },
 ];
 
@@ -42,7 +72,7 @@ const Projects = () => {
               <p className="text-gray-700 dark:text-gray-300 mb-4">{project.desc}</p>
               <p className="text-sm text-indigo-500 dark:text-indigo-300 mb-4">{project.tech.join(" | ")}</p>
               <div className="flex space-x-4">
-                <a href="https://my-new-e-shop.netlify.app/" className="text-indigo-600 dark:text-indigo-300 hover:underline">Live</a>
+                {project.live && <a href={project.live} className="text-indigo-600 dark:text-indigo-300 hover:underline">Live</a>}
                 <a href={project.repo} className="text-indigo-600 dark:text-indigo-300 hover:underline">GitHub</a>
               </div>
             </motion.div>

@@ -10,7 +10,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
         animate={{ x: 0 }}
         className="text-3xl font-extrabold text-indigo-800 dark:text-indigo-100"
       >
-        Tarek Hegazy
+        Tarek Abdelnaby
       </motion.h1>
       <div className="flex items-center space-x-6">
         <ul className="hidden md:flex space-x-6">

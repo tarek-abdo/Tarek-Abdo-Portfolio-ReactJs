@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import cvFile from "../assets/Tarek_Hegazy.pdf";
+import cvFile from "../assets/Tarek Abdelnaby CV, Frontend Developer.pdf";
 
 const Contact = () => {
   return (
@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
         <motion.a
           href={cvFile}
-          download="Tarek_Hegazy.pdf"
+          download="Tarek Abdelnaby CV, Frontend Developer.pdf"
           whileHover={{ scale: 1.1, rotate: 5 }}
           whileTap={{ scale: 0.95 }}
           className="inline-block px-8 py-4 bg-indigo-600 dark:bg-indigo-500 rounded-full text-lg font-semibold text-white shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-400 transition"

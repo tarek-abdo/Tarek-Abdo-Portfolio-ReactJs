@@ -11,7 +11,7 @@ const Home = () => {
         className="text-center p-8 bg-violet-200 dark:bg-gray-900/20 backdrop-blur-lg rounded-xl shadow-2xl"
       >
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-600 dark:from-indigo-300 dark:to-pink-300">
-          Hi, I’m Tarek Hegazy
+          Hi, I’m Tarek Abdelnaby
         </h1>
         <p className="text-xl md:text-2xl mb-6 font-light">
           Front-End Developer | Crafting Stunning Web Experiences
