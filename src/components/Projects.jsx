@@ -3,26 +3,20 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "مركز مدارك",
+    img: "/images/project7.png",
+    desc: "مركز مدارك للدراسات الاسلامية. يقدم العديد من المقالات والابحاث",
+    tech: ["Next", "Tailwind"],
+    live: "https://madarek-center.vercel.app/",
+    repo: "https://github.com/tarek-abdo/madarek_center/tree/main/src",
+  },
+  {
     title: "React.Js E-Commerce Website",
     img: "/images/project1.png",
     desc: "A vibrant store with smooth animations. Products cart, whishlist and other sections",
     tech: ["React", "Tailwind", "Redux Toolkit", "Framer Motion"],
     live: "https://my-new-e-shop.netlify.app",
     repo: "https://github.com/tarek-abdo/e-shop",
-  },
-  {
-    title: "Next.Js E-Commerce Website",
-    img: "/images/project2.png",
-    desc: "Powerful full stack e-commerce project",
-    tech: ["Next","React", "Tailwind", "Stripe","Strapi", "Cloudinary","Kinde Authentication","Resend", "React Email"],
-    repo: "https://github.com/tarek-abdo/next.js-e-commerce-frontend",
-  },
-  {
-    title: "Doctor Appointment Booking System",
-    img: "/images/project3.png",
-    desc: "Doctor Appointment booking app with ability to serach docotrs specialization and book an appointment",
-    tech: ["Next.js","React.js","Stripe", "Strapi CMS", "Tailwind CSS","Kinde Authentication"],
-    repo: "https://github.com/tarek-abdo/doctor-appointment-frontend",
   },
   {
     title: "Technical Blog Website",
@@ -48,6 +42,28 @@ const projects = [
     live: " https://new-educity-app.netlify.app",
     repo: " https://github.com/tarek-abdo/Educity-universty-website ",
   },
+  {
+    title: "Big Spring",
+    img: "/images/project8.png",
+    desc: "Company Profile website for Big Spring company",
+    tech: ["Next", "Tailwind"],
+    live: "https://bigspring-company-profile.vercel.app/",
+    repo: "https://github.com/tarek-abdo/bigspring-company-profile",
+  },
+  {
+    title: "Next.Js E-Commerce Website",
+    img: "/images/project2.png",
+    desc: "Powerful full stack e-commerce project",
+    tech: ["Next","React", "Tailwind", "Stripe","Strapi", "Cloudinary","Kinde Authentication","Resend", "React Email"],
+    repo: "https://github.com/tarek-abdo/next.js-e-commerce-frontend",
+  },
+  {
+    title: "Doctor Appointment Booking System",
+    img: "/images/project3.png",
+    desc: "Doctor Appointment booking app with ability to serach docotrs specialization and book an appointment",
+    tech: ["Next.js","React.js","Stripe", "Strapi CMS", "Tailwind CSS","Kinde Authentication"],
+    repo: "https://github.com/tarek-abdo/doctor-appointment-frontend",
+  }
 ];
 
 const Projects = () => {
@@ -63,8 +79,8 @@ const Projects = () => {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2, delay: index * 0.2 }}
-              whileHover={{ scale: 1.05, rotate: 1.5 }}
+              transition={{ duration: 0.05, delay: index * 0.01 }}
+              whileHover={{ scale: 1.05, rotate: 1.2 }}
               className="p-6 bg-white/20 dark:bg-gray-900/20 backdrop-blur-md rounded-lg shadow-lg hover:shadow-indigo-500/50 transition-all"
             >
               <img src={project.img} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
